@@ -9,29 +9,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
 <body>
     <div id="nav-bar">
-        <button class="nav-btn">Acasa </button>
+        <button class="nav-btn">Acasa</button>
         <button class="nav-btn">Meniu</button>
         <div id="logo-spacer"></div>
-        <img id="logo" src="./logo.png" alt="logo">
+        <img id="logo" src="./assets/logo.png" alt="Fam Pizzeria Logo">
         <button class="nav-btn">Cos</button>
         <button class="nav-btn">Despre noi</button>
     </div>
-    <div id="slide">
-        <div class="slide-description">
-            <h1>Hello</h1>
-            <p>Paragraph</p>
-        </div>
-        <div class="slide-images">
-            <img src="./pizza_1.jpg" alt="Pizza-photo">
-        </div>
-    </div>
-    <div id="footer">
 
+    <div id="slider">
+        <div id="slides">
+            <div id="description">
+                <h1>Headersssssss</h1>
+                <p>Paraparaparaparaparaparagraphs</p>
+            </div>
+            <img src="./assets/pizza_1.jpg" alt="Pizza 1" class="slide">
+            <img src="./assets/pizza_2.jpg" alt="Pizza 2" class="slide">
+            <img src="./assets/pizza_3.jpg" alt="Pizza 3" class="slide">
+        </div>
+        <button id="prev" onclick="prevSlide()">
+            <img src="./assets/arrow-left.png" alt="Left Arrow">
+        </button>
+        <button id="next" onclick="nextSlide()">
+            <img src="./assets/arrow-right.png" alt="Right Arrow">
+        </button>
     </div>
 
 </body>
