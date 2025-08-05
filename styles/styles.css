@@ -17,7 +17,7 @@ body {
     align-items: center;
     background-color: #e02026;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    z-index: 1;
+    z-index: 2;
 }
 
 #logo-spacer {
@@ -65,6 +65,8 @@ button.nav-btn:hover {
 
 #slider #slides img.displaySlide {
     display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
 }
 
 #slides {
@@ -108,13 +110,40 @@ button.nav-btn:hover {
 }
 
 #description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: white;
-    padding: 60px;
+    padding: 80px;
     height: 500px;
     overflow: hidden;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+#description h1.st-slide {
+    font-size: 3rem;
+    color: #e02026;
 }
 
 #description h1 {
+    font-size: 2rem;
     color: #e02026;
     margin-bottom: 10px;
+}
+
+#description p {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+@keyframes fade {
+    from {
+        opacity: .5
+    }
+
+    to {
+        opacity: 1
+    }
 }
