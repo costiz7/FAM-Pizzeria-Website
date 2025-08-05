@@ -140,6 +140,14 @@ button.nav-btn:hover {
     margin-bottom: 10px;
 }
 
+.footer {
+    display: flex;
+    margin-top: 100px;
+    height: 500px;
+    width: 100%;
+    background-color: gray;
+}
+
 @keyframes fade {
     from {
         opacity: .5
