@@ -14,11 +14,11 @@
 
 <body>
     <div id="nav-bar">
-        <button onclick="location.href='./index.html'" class="nav-btn">Acasă</button>
         <button class="nav-btn">Meniu</button>
+        <button class="nav-btn">Comenzi</button>
         <div id="logo-spacer"></div>
-        <img id="logo" src="./assets/logo.png" alt="Fam Pizzeria Logo">
-        <button class="nav-btn">Coș</button>
+        <img onclick="location.href='./index.html'" id="logo" src="./assets/logo.png" alt="Fam Pizzeria Logo">
+        <button class="nav-btn">Rezervări</button>
         <button class="nav-btn">Despre noi</button>
     </div>
 
@@ -37,6 +37,30 @@
         <button id="next" onclick="nextSlide()">
             <img src="./assets/arrow-right.png" alt="Right Arrow">
         </button>
+    </div>
+
+    <div class="top-pizza">
+        <div class="pizza-card">
+            <div class="h-wrapper">
+                <h1>Pizza Acciughe E Burrata</h1>
+            </div>
+            <img src="./assets/pizza_2.jpg" alt="Pizza Acciughe E Burrata">
+            <span onclick="location.href='./index.html'">Vizualizează</span>
+        </div>
+        <div class="pizza-card">
+            <div class="h-wrapper">
+                <h1>Pizza Napoletană</h1>
+            </div>
+            <img src="./assets/pizza_1.jpg" alt="Pizza Napoletană">
+            <span onclick="location.href='./index.html'">Vizualizează</span>
+        </div>
+        <div class="pizza-card">
+            <div class="h-wrapper">
+                <h1>Pizza Salame</h1>
+            </div>
+            <img src="./assets/pizza_3.jpg" alt="Pizza Salame">
+            <span onclick="location.href='./index.html'">Vizualizează</span>
+        </div>
     </div>
 
     <div class="footer"> </div>
