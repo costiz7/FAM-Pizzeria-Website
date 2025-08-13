@@ -1,3 +1,4 @@
+/* SOME DEFAULTS */
 * {
     padding: 0;
     margin: 0;
@@ -9,11 +10,12 @@ body {
     background-color: rgb(255, 255, 230);
 }
 
+/* NAV-BAR STYLING */
 #nav-bar {
     position: sticky;
+    display: flex;
     top: 0;
     width: 100%;
-    display: flex;
     height: 100px;
     justify-content: space-around;
     align-items: center;
@@ -39,7 +41,6 @@ body {
 
 #logo:hover {
     transform: scale(1.1) translateY(7px);
-
 }
 
 button.nav-btn {
@@ -57,6 +58,8 @@ button.nav-btn:hover {
     background-color: #cd2127;
 }
 
+
+/*SLIDER STYLING */
 #slider {
     position: relative;
     width: 100%;
@@ -64,7 +67,7 @@ button.nav-btn:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-#slider #slides img {
+#slides img {
     width: 100%;
     height: 500px;
     object-fit: cover;
@@ -72,7 +75,7 @@ button.nav-btn:hover {
     filter: brightness(0.7);
 }
 
-#slider #slides img.displaySlide {
+#slides img.displaySlide {
     display: block;
     animation-name: fade;
     animation-duration: 1.5s;
@@ -103,6 +106,7 @@ button.nav-btn:hover {
     transform: scale(1.1) translateY(-40px);
 }
 
+/* PREV-BUTTON OF THE SLIDER */
 #prev {
     left: 0;
 }
@@ -113,6 +117,7 @@ button.nav-btn:hover {
     width: 50px;
 }
 
+/* NEXT-BUTTON OF THE SLIDER */
 #next {
     right: 0;
 }
@@ -123,6 +128,7 @@ button.nav-btn:hover {
     width: 50px;
 }
 
+/* DESCRIPTIONS IN THE SLIDER */
 #description {
     display: flex;
     flex-direction: column;
@@ -154,13 +160,6 @@ button.nav-btn:hover {
     animation-duration: 1.5s;
 }
 
-.footer {
-    display: flex;
-    height: 500px;
-    width: 100%;
-    background-color: gray;
-}
-
 @keyframes fade {
     from {
         opacity: .5
@@ -171,6 +170,7 @@ button.nav-btn:hover {
     }
 }
 
+/* SECTION FOR THE MOST POPULAR PIZZAS */
 .top-pizza {
     position: relative;
     display: flex;
@@ -232,4 +232,11 @@ button.nav-btn:hover {
 
 .pizza-card span:hover {
     transform: scale(1.1);
+}
+
+.footer {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    background-color: gray;
 }
