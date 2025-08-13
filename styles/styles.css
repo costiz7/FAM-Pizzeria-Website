@@ -7,18 +7,18 @@
 }
 
 body {
-    background-color: rgb(255, 255, 230);
+    background-color: rgb(255, 248, 230);
 }
 
 /* NAV-BAR STYLING */
 #nav-bar {
     position: sticky;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     top: 0;
     width: 100%;
     height: 100px;
-    justify-content: space-around;
-    align-items: center;
     background-color: #e02026;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     z-index: 2;
@@ -56,6 +56,11 @@ button.nav-btn {
 
 button.nav-btn:hover {
     background-color: #cd2127;
+}
+
+button.nav-btn.wolt:hover {
+    background-color: #00C1EA;
+    color: white;
 }
 
 
