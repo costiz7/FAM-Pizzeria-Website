@@ -50,17 +50,30 @@ button.nav-btn {
     height: 100%;
     transition: 300ms;
     color: #f1d7a6;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 550;
+    cursor: pointer;
 }
 
 button.nav-btn:hover {
     background-color: #cd2127;
 }
 
+/* WOLT */
+.wolt img {
+    position: relative;
+    height: 60%;
+    filter: brightness(0) saturate(100%) invert(86%) sepia(36%) saturate(343%) hue-rotate(342deg) brightness(98%) contrast(92%);
+    transition: 300ms;
+    top: 5px;
+}
+
 button.nav-btn.wolt:hover {
-    background-color: #00C1EA;
-    color: white;
+    background-color: #21cdcd;
+}
+
+button.nav-btn.wolt:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(194deg) brightness(105%) contrast(108%);
 }
 
 
