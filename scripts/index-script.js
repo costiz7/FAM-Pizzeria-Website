@@ -1,4 +1,4 @@
-//image slider
+//Image slider script
 const descriptions = [
   `
     <h1 class="st-slide">Să mori tu că vrei sos?</h1>
@@ -51,3 +51,18 @@ function nextSlide(){
     slideIndex++;
     showSlide(slideIndex);  
 }
+
+//Flip card script
+document.querySelectorAll('.front-card span').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const flipCard = this.closest('.pizza-card');
+    flipCard.classList.add('flipped');
+  });
+});
+
+document.querySelectorAll('.back-card span').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const flipCard = this.closest('.pizza-card');
+    flipCard.classList.remove('flipped');
+  });
+});

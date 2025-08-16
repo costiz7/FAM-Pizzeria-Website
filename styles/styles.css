@@ -202,18 +202,59 @@ button.nav-btn.wolt:hover img {
     width: 100%;
 }
 
+/* CARD CONTAINER */
+.card-container {
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background: none;
+    perspective: 2000px;
+}
+
 .pizza-card {
     position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    transform-style: preserve-3d;
+    transition: 800ms ease;
+}
+
+.card-container .pizza-card.flipped {
+    transform: rotateY(180deg);
+}
+
+.front-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.back-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    overflow: hidden;
+    transform: rotateY(180deg);
+}
+
+/*FRONT-BACK STYLING*/
+
+.front-card,
+.back-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
-    height: 550px;
-    width: 450px;
-    border-radius: 50px;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .h-wrapper {
@@ -221,38 +262,79 @@ button.nav-btn.wolt:hover img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #e02026;
-    height: 70px;
     width: 100%;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+    height: 60px;
+    margin-bottom: 40px;
+    background-color: #e02026;
+    color: rgb(241, 215, 166);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.10);
 }
 
 .h-wrapper h1 {
-    color: #f1d7a6;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
 }
 
-.pizza-card img {
+.front-card img {
     position: relative;
+    width: 350px;
     height: 300px;
-    width: 400px;
+    margin-bottom: 40px;
     object-fit: cover;
     border-radius: 10px;
+    border: 3px solid #e02026;
 }
 
-.pizza-card span {
-    color: #e02026;
+.front-card span,
+.back-card span {
+    position: relative;
+    font-size: 1.3rem;
     font-weight: 600;
-    font-size: 1.5rem;
+    color: #e02026;
     cursor: pointer;
     transition: 300ms;
 }
 
-.pizza-card span:hover {
+.front-card span:hover,
+.back-card span:hover {
     transform: scale(1.1);
+    filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.15));
 }
 
-.footer {
+.detalii {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.detalii .continut {
+    color: #e02026;
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+.detalii p {
+    margin-bottom: 75px;
+}
+
+.price-container {
+    display: flex;
+    gap: 15px;
+    font-size: 0.9rem;
+}
+
+.price-container .price {
+    color: #e02026;
+}
+
+.back-card span {
+    position: absolute;
+    bottom: 30px;
+}
+
+.detalii .footer {
     display: flex;
     height: 500px;
     width: 100%;
