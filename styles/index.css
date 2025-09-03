@@ -254,10 +254,3 @@
     position: absolute;
     bottom: 30px;
 }
-
-.footer {
-    display: flex;
-    height: 500px;
-    width: 100%;
-    background-color: gray;
-}
