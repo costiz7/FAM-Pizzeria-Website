@@ -1,7 +1,7 @@
 //Image slider script
 const descriptions = [
   `
-    <h1 class="st-slide">Să mori tu că vrei sos?</h1>
+    <h1 class="st-slide">Sosul e bonus, gustul e principalul.</h1>
   `,
   `
     <h1>Fă-ți poftă, nu scuze</h1>
