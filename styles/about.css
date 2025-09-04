@@ -33,18 +33,18 @@
 .gallery {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 20px;
     margin-top: 30px;
     margin-bottom: 30px;
+
 }
 
 .gallery img {
     height: 300px;
     width: 450px;
     object-fit: cover;
-    overflow: hidden;
     border-radius: 20px;
     transition: transform 0.3s ease;
 }
@@ -65,15 +65,32 @@
 
 .page-content>span {
     color: #e02026;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 10px;
 }
 
 .app {
     display: flex;
+    cursor: pointer;
+    width: fit-content;
+    gap: 5px;
 }
 
 .app>img {
     height: 24px;
     filter: brightness(0) saturate(100%) invert(15%) sepia(87%) saturate(4201%) hue-rotate(350deg) brightness(98%) contrast(90%);
+}
+
+.app>span {
+    font-weight: 500;
+    font-size: 1.1rem;
+    position: relative;
+    top: 2px;
 }
