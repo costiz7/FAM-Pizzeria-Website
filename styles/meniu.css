@@ -157,6 +157,5 @@
     color: #e02026;
     font-size: 2rem;
     font-weight: 700;
-    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.15));
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
