@@ -6,7 +6,8 @@ This project highlights my **frontend design abilities** using HTML, CSS, and Ja
 ## 🚀 Check it out here
 Check it out here: [FAM Pizzeria Website](https://fam-pizzeria-website.vercel.app/index.html)
 
-[![famHome.png](https://i.postimg.cc/QdFmPwPR/famHome.png)](https://postimg.cc/Xr09BHn8)
+![FAM Pizzeria Homepage](https://i.imgur.com/J8jUymu.png)
+
 
 ## ✨ Features
 - **Navigation bar** for easy browsing
@@ -15,6 +16,11 @@ Check it out here: [FAM Pizzeria Website](https://fam-pizzeria-website.vercel.ap
 - **Location page** with embedded Google Maps
 - **JavaScript carousel** on the homepage
 - Smooth **animations** for flip cards and page transitions
+  
+![FAM Pizzeria Menu](https://imgur.com/Iilvdju.png)
+
+![FAM Pizzeria Reservations](https://imgur.com/joNQnan.png)
+
 
 ## 🛠️ Built With
 - **HTML5**  
